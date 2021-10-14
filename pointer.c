@@ -1,12 +1,26 @@
 #include <stdio.h>
 
 int main () {
+   int x;
+   int *ptr;
+   ptr = &x;
+   char y;
+   char *ch;
+   ch =&y;
+   printf("Enter Any Numbers:");
+   scanf("%d",&x);
 
-   int  var1;
-   char var2[22];
+   printf("Enter Any Charecter:");
+   scanf("%s",&y);
 
-   printf("Address of var1 variable: %x\n", &var1  );
-   printf("Address of var2 variable: %x\n", &var2  );
+   printf("Value Of Number = %d\n",x);
+   printf("Value Of Address Number = %u\n",&x);
+    printf("Pointer value of Address=%d\n",ptr);
+   printf("Value Of pointer=%d",*ptr);
 
-   return 0;
+   printf("Value Of y %c:\n",y);
+   printf("Value Of Address = %x\n",&y);
+   printf("pointer Value Of Address=%x\n",ch);
+   printf("Pointer Value=%c",*ch);
+  return 0;
 }
