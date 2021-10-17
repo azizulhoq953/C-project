@@ -1,3 +1,4 @@
+//All Data Type Practtice
 #include <iostream>
 #include <string>
 using namespace std;
