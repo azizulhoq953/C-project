@@ -3,18 +3,23 @@ using namespace std;
 int main()
 
 {
-  int a, b;
+  int a, b,c;
   cout<<"enter Value Of A:";
   cin>>a;
   cout<<"Enter Value Of B:";
   cin>>b;
+  cout<<"Enter Value Of C:";
+  cin>>c;
   int *ptrA=&b;
   int *ptrB=&a;
+  //void *ptrc=&c
+  //int ptrd=(int *)ptrc;
   //cout << "Value of ptrA is " << *ptrA << " sored in address "<< ptrA<<"\n";
  // cout << "Value of ptrB is " << *ptrB <<" sored in address "<< ptrB<<"\n";
 
   cout<<"Your Value Of ptrA is " << *ptrA<<"\n" << "sorted Address ptrA "<< ptrA<<"\n";
   cout<<"your Value Of ptrB is " << *ptrB<<"\n" <<" sorted Address ptrB "<< ptrB<<"\n";
+ // cout<<"your Value Of ptrc is " << *ptrd<<"\n" <<" sorted Address ptrc "<< ptrc<<"\n";
   return 0;
 }
 
