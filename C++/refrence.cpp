@@ -14,7 +14,7 @@ cout<<"Enter C Refrence Value:";
 cin>>c;
 
 int &valueA=a;
-cout<<"value Of :"<<valueA<<"\n";
+cout<<"value Of a:"<<valueA<<"\n";
 
 int &valueB=b;
 
