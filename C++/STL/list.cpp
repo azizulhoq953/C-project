@@ -46,7 +46,7 @@ int main()
 
     cout << "\ngqlist2.sort(): ";
     gqlist2.sort();
-    showlist(gqlist2);
+    showlist(gqlist2); //shortest list
 
     return 0;
 
