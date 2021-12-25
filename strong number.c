@@ -7,7 +7,7 @@ int main() //uncomplete programming knowladge ;
     temp=num;
     while (temp!=0)
     {
-         rem=temp%10;
+         rem=temp%10; //modulas
         fact=1;
         for (i=1;i<=rem; i++)
         {
