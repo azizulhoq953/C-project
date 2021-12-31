@@ -18,7 +18,7 @@ class BadLengthException {
         }
 };
 
-
+//boolean
 
 bool checkUsername(string username) {
 	bool isValid = true;
