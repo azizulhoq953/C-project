@@ -16,7 +16,7 @@ cout<< binary_search(arr, arr+6,12)<<"\n";
 /*int main()
 {
 
-int arr[6]={4,1,6,8,4,3};
+int arr[6]={4,1,6,8,4,3}; // array
 
 cout << find (arr, arr+6, 3) -arr <<"\n"; //success case
 
