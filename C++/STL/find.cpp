@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//binary search
+// binary search
 
 int main(){
 int arr[6]={2,5,7,9,10,11};
