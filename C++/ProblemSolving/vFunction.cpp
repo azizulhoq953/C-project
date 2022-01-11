@@ -94,7 +94,8 @@ int main(){
 
         cin>>val;
         if(val == 1){
-            // If val is 1 current object is of type Professor
+
+            // If val is 1 current object is of type Professor .
             per[i] = new Professor;
 
         }
