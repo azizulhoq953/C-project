@@ -2,17 +2,13 @@
 using namespace std;
 
 int main(){
-int n;
+int Id;
 float m;
 double num;
-long long Id;
+//long long Id;
 char str[10];
 string name;
 
-//int data type define
-cout<<"Enter Any Integer Numbers:";
-cin>>n;
-cout<<n<<"\n";
 
 //float data type define
 cout<<"Enter Any floating Numbers:";
@@ -24,7 +20,7 @@ cout<<"Enter Any double data type Numbers:";
 cin>>num;
 cout<<num<<"\n";
 
-//long long data type define
+//int data type
 cout<<"Enter your Student ID:";
 cin>>Id;
 cout<<Id<<"\n";
@@ -37,7 +33,7 @@ cout<<name<<"\t";
 //all data
 cout<<"\n\nAll information:"<<"\n";
 
-cout<<n<<"\n";
+//cout<<n<<"\n";
 cout<<m<<"\n";
 cout<<num<<"\n";
 cout<<Id<<"\n";
