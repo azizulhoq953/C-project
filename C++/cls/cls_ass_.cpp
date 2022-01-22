@@ -20,6 +20,7 @@ cout<<"Enter Your Product_name:";
 cin>>product_name;
 cout<<product_name<<"\n"<<endl;
 
+
 // integer data type
 cout<<"Enter your product_Id:";
 cin>>product_Id;
