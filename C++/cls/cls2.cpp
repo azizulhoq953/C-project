@@ -1,4 +1,19 @@
-#include<iostream>
+#include <iostream>
+using namespace std;
+
+int main() {
+int n;
+cin>>n;
+  for (int i = 0; i < n; i++) {
+    if (i == n) {
+      break;
+    }
+    cout << i << "\n";
+  }
+  return 0;
+}
+
+/*#include<iostream>
 using namespace std;
 
 
@@ -27,7 +42,7 @@ cout<<"\t"<<"Sum Of="<<sum<<"\n";
 return 0;
 }
 
-
+*/
 
 /*int main(){
 
