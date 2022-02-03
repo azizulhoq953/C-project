@@ -1,13 +1,15 @@
-
 #include<stdio.h>
-
+#include<stdbool.h>
 int main(){
 
-int n,m,sum;
-printf("Enter you any two numbers Number:\n");
+int x;
+printf("Enter Your Number:");
+scanf("%d",&x);
 
-scanf("%d %d",&n,&m);
- sum=n+m;
-printf("Your Value Of: %d",sum);
+if(x%2==0){
+    printf("Number Is Even");
+}else
+printf("Number Is Odd");
 
+return 0;
 }
