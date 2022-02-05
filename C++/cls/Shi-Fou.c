@@ -1,15 +1,13 @@
-#include<stdio.h>
-#include<stdbool.h>
+
+#include<iostream>
+using namespace std;
+
 int main(){
 
-int x;
-printf("Enter Your Number:");
-scanf("%d",&x);
+for (int i = 0; i <= 10; i = i + 2) {
 
-if(x%2==0){
-    printf("Number Is Even");
-}else
-printf("Number Is Odd");
+  cout << i << "\n";
+}
 
 return 0;
 }
