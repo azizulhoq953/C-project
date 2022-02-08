@@ -24,12 +24,13 @@ using namespace std;
 
 int main() {
 //string name;
-char name[13]="azizurrahman";
+string name;
+cout<<"Enter Any Name:";
+cin>>name;
 
-//cin>>name;
-
-
-cout<<name;
+cout<<"\n\nYour Name Is:"<<name;
+cout<<"\nData Type Size= "<<sizeof(name)<<"byte";
+cout<<"\nLength Of= "<<name.length();
 
   return 0;
 }
