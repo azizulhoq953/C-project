@@ -5,7 +5,7 @@
 
 int main(void) {
 
-  // 2d array
+  // 2d arrayclear
   int num[3][4] = {
     {1, 2,  3,  4},
     {5, 6,  7,  8},
