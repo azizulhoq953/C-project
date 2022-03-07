@@ -4,7 +4,7 @@ using namespace std;
 // binary search
 
 int main(){
-int arr[6]={2,5,7,9,10,11};
+int arr[7]={2,5,7,9,10,11};
 
 cout << binary_search(arr, arr+6,7)<<"\n";
 cout<< binary_search(arr, arr+6,12)<<"\n";
