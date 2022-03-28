@@ -1,3 +1,5 @@
+
+//it's loop
 #include<stdio.h>
 
 int main(){
