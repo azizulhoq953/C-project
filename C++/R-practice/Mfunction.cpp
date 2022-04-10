@@ -22,7 +22,7 @@ void compare(int a, int b, int* add_great, int* add_small)
 
 void addition(int a,int b){
     int add=a+b;
-std::cout<<"Sum OF"<<add;
+std::cout<<"Sum OF: "<<add;
 }
 
 // Driver code
