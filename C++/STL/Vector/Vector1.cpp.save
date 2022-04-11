@@ -13,7 +13,7 @@ vector <string> vec2;
 
 
 vec.push_back(20);
-vec2.push_back("Azizul");
+vec.pop_back("Azizul");
 
 
 printf("%d\n",vec[0]);

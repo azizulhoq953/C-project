@@ -11,11 +11,11 @@ int main() {
 
 
     cout<<"...................................."<<endl;
-    cout<<"\t\t UGV"<<endl;
+    cout<<"\t\tUGV"<<endl;
     cout<<"...................................."<<endl;
 
     cout<<"Intra University Programming Contest"<<endl;
-      cout<<"\t\tApril-2022"<<endl;
+      cout<<"\t "<<" "<<" "<<" April-2022"<<endl;
     cout<<"..................................."<<endl;
 
     return 0;
