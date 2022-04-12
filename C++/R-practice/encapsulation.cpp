@@ -1,6 +1,7 @@
 //encapsulation is multiple object and multiple function define system
 #include<iostream>
 using namespace std;
+//#include<bits/stdc++.h>
 
 class student{
 private:  //private method is direct no access any function
