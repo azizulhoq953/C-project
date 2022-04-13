@@ -5,7 +5,7 @@ using namespace std;
 
 class student{
 private:  //private method is direct no access any function
-string name;
+string name;ss
 int id;
 
 public:
@@ -32,8 +32,9 @@ return id;
 int main(){
 student stdnt;
 stdnt.setname("azizul");
-stdn
-cout<<stdnt.getname();
+stdnt.setid(12021);
+cout<<stdnt.getname()<<endl;;
+cout<<stdnt.getid()<<endl;
 
 getchar();
 }
