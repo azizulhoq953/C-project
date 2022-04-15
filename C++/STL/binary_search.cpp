@@ -24,17 +24,20 @@ sort(a, a+asize);
 cout<<"\n\n array after sorting is: \n";
 
 show(a,asize);
+cout<<"enter Your Serach Element:\n";
+int n;
+cin>>n;
 cout<<"\n\nNow  we do the binary search";
-if (binary_search(a, a+10,2))
-cout<<"\n element found in the array:";
+if (binary_search(a, a+10,n))
+cout<<"\n element found in the array:"<<"\nYour Element Of:"<<a[n]<<endl;
 else
-cout<<"\nElement Not Found In the Array";
+cout<<"\nElement Not Found In the Array\n\n";
 
-cout<<"\n\nNow  we do the binary search for 10";
+/*cout<<"\n\nNow  we do the binary search for 10";
 if (binary_search(a, a+10,10))
 cout<<"\n element found in the array:";
 else
 cout<<"\nElement Not Found In the Array\n\n";
-
+*/
 return 0;
 }
