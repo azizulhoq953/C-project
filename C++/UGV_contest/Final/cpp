@@ -1,0 +1,24 @@
+using namespace std;
+class ayshe
+{
+    int id:
+        staring name;
+        float cgpa;
+        ayshe (int i,string n,float s )
+        {
+            id=i
+            name=n
+            cgpa=s
+        }
+         void disply()
+         {
+             cout<<id<< "name"<<"cgpa"<<endl;
+
+         }
+          ~ayshe()
+          {
+              cout<<"default"<<endl;
+          }
+    };
+    int main()
+    string ob1
