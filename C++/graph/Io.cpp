@@ -1,14 +1,16 @@
 #include<iostream>
+//#include <fstream>
 using namespace std;
 
 int adj[50][50];
 
 
 int main(){
+freopen("io.txt", "r", stdin); //file include
 int edge,node;
-cout<<"Enter Number Of node:"<<endl;
+//cout<<"Enter Number Of node:"<<endl;
 cin>>node;
-cout<<"Enter Number Of edge:"<<endl;
+//cout<<"Enter Number Of edge:"<<endl;
 cin>>edge;
 
 int n1,n2;
