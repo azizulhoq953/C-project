@@ -1,4 +1,4 @@
-/* Class Are Three Types Public Private Protected
+// Class Are Three Types Public Private Protected
 
 
 #include<iostream>
@@ -6,7 +6,7 @@
 using namespace std;
 
 class access{
-
+private:
 int height;
 int width;
 
@@ -16,6 +16,26 @@ int area();
 
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int access::area(){
 
