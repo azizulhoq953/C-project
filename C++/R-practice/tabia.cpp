@@ -57,7 +57,8 @@ public:
 
         while(!f2.eof())
         {
-            if(f2.read(reinterpret_cast<char*>(this), sizeof(*this)))
+            if(f2.read(reinterpret_cast<char*>(this), sizeof(*this))) //convert this is char* type
+                                                                                                                            // https://www.freecodecamp.org/news/ascii-table-hex-to-ascii-value-character-code-chart-2/
             {
                showContact();
                cout<<"\n\n=======================\n";
