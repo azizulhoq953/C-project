@@ -9,7 +9,9 @@ map<int, string> Employees;
 
 //insert value using insert function
 Employees.insert(std::pair<int, string>(101, "john"));
+
 Employees.insert(std::pair<int, string>(103, "Daenerys"));
+
 Employees.insert(std::pair<int, string>(104, "Arya"));
 
 //insert using array index

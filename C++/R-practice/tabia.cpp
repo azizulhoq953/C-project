@@ -31,7 +31,7 @@ public:
 
     {
         char ch;
-        ofstream f1;
+        ofstream f1; //output file stream and create file
         f1.open("Phonebook.dat", ios::binary | ios::app);
 
         do
@@ -48,8 +48,9 @@ public:
 
     void readFromFile()
     {
-        ifstream f2;
-        f2.open("Phonebook.dat", ios::binary);
+        ifstream f2; //input file stream and read information form file
+        
+        f2.open("Phonebook.dat", ios::binary); //open a file in the binary mode for input/output (when the file contains binary data
 
         cout<<"\n\n=======================\n";
         cout<<"List Of Contacts";
@@ -77,6 +78,9 @@ public:
         while(!f3.eof())
         {
             if(f3.read(reinterpret_cast<char*>(this), sizeof(*this)))
+            /*
+            It is used to convert a pointer of some data type into a pointer of another data type, even if the the data types before and after conversion are different.
+It does not check if the pointer type and data pointed by the pointer is same or not.*/
             {
                 if(phone==phno)
                 {
@@ -97,6 +101,7 @@ public:
         ifstream f5;
 
         f5.open("Phonebook.dat", ios::binary);
+        /*(phonebook.dat) is mainly used data load audio and video file*/ 
         f4.open("temp.dat", ios::binary);
 
         cout<<"Enter phone number to delete: ";
@@ -108,7 +113,8 @@ public:
             {
                 if(phno!=phone)
                 {
-                    f4.write(reinterpret_cast<char*>(this), sizeof(*this));
+                    f4.write(reinterpret_cast<char*>(this), sizeof(*this)); /*(this) Keyword is Means to pass current object as a parameter to another
+                     method.and refer current class instance variable.*/
                 }
                 else flag=1;
             }
@@ -134,7 +140,7 @@ public:
         cin>>phone;
 
         f6.open("Phonebook.dat", ios::binary|ios::out|ios::in);
-        while(!f6.eof())
+        while(!f6.eof()) //eof endOfFile
         {
             if(f6.read(reinterpret_cast<char*>(this), sizeof(*this)))
             {
@@ -144,7 +150,8 @@ public:
                     createContact();
 
                     int pos = -1*sizeof(*this);
-                    f6.seekp(pos, ios::cur);
+                    f6.seekp(pos, ios::cur); //seekp ofstream set position and dosen't return
+                    
                     f6.write(reinterpret_cast<char*>(this), sizeof(*this));
                     cout<<endl<<endl<<"\tContact is updated successfully...";
                     return;
