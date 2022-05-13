@@ -6,43 +6,26 @@ string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
 
-int hourglassSum(vector<vector<int>> arr)
-{
-    vector<int>sums;
-
-
-    for (int i=0; i<4; i++)
-    {
-        for(int j=0; j<3; j++)
-        {
-            sums.push_back
-            (
-            arr[i][j] + arr[i][j + 1] + arr[i][j+2] +
-                       arr[i+1][j+1]  +
-            arr[i+2][j]+arr[i+2][j+1]  +  arr[i+2][j+2]
-            );
-        }
-    }
-
-
-
-    int max = sums[0];
-
-    for (int i=0; i<sums.size(); i++)
-    {
-        if (sums[i] > max)
-        {
-            max = sums[i];
-        }
-    }
-
-    return max;
-
-
-}
+/*
+ * Complete the 'hourglassSum' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+ */
 
 int hourglassSum(vector<vector<int>> arr) {
-  vector<int>sums;
+
+int result =INT_MIN;
+for(int r=0;r<=3; ++r){
+for(int c=0;c<=3;++c){
+int sum=arr[r][c] + arr[r][c+1] + arr[r][c+2] +
+arr[r+1][c+1] + arr[r+2][c] + arr[r+2][c+1] + arr[r+2][c+2];
+
+result = std::max(result,sum);
+}
+
+}
+return result;
 
 }
 
@@ -114,4 +97,3 @@ vector<string> split(const string &str) {
 
     return tokens;
 }
-

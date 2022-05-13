@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+pair<int, double> PAIR1;
+pair<string, char> PAIR2;
+
+
+//pair<string, double> PAIR2("Azizul",23.56);
+cout<<"Integer Value: "<< PAIR1.first<<endl;
+cout<<"Double Value: "<< PAIR1.second<<endl;
+
+cout<<"\n";
+
+cout<< "String "PAIR2.first<<endl;
+cout<< PAIR2.second<<endl;
+
+
+getchar();
+
+}
