@@ -1,0 +1,29 @@
+
+#include<iostream>
+using namespace std;
+
+class Myclass{
+public:
+int id;
+string name1;
+string name2;
+void func(){
+cout<<id<<endl;
+cout<<name1<<endl;
+cout<<name2<<endl;
+}
+
+};
+
+
+int main(){
+
+Myclass Myinfo;
+
+Myinfo.id=12021002;
+Myinfo.name1="Tabia";
+Myinfo.name2="Tamanna";
+
+func(
+return 0;
+}

@@ -1,0 +1,45 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+class name{
+string Fname;
+
+public:
+void setFname(string n){
+Fname=n;
+}
+
+void getFname(){
+cout<<Fname<<endl;
+}
+
+
+};
+
+class allInfo : private name{
+int age;
+
+public:
+void setallInfo(int i){
+age=i;
+}
+
+void getallInfo(){
+getFname();
+cout<<age<<endl;
+}
+
+};
+
+int main(){
+name info;
+allInfo main;
+
+info.setFname("Azizul");
+//info.showFname();
+info.getFname();
+
+main.setallInfo(22);
+main.getallInfo();
+}
