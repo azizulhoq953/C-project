@@ -17,7 +17,7 @@ int main(){
     cin>>x;
     cout<<"Enter any Number of Assign Y variable:";
     cin>>y;
-//int x=500,y=100;
+
 swap(&x,&y); //pass value to the swap function
 cout<<"Value Of X is:"<<x<<endl;
 cout<<"Value Y is:"<<y<<endl;
