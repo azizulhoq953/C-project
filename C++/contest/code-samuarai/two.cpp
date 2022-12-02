@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<vector>
 #include <algorithm>
@@ -5,8 +6,9 @@
 #include<string.h>
 
 using namespace std;
+/*
 //____________________________________________________________________________________________________________________________________
-/*#define PI  2*acos(0.0)
+#define PI  2*acos(0.0)
 #define pf  printf
 #define sc  scanf
 #define ff  first
@@ -39,80 +41,51 @@ template <class T> inline T bigmod(T b, T p){ if(p <= 0 || b == 0) return 1; ll 
 template <class T> inline string to_string(const pair<T,T> &p) {
 return "{" + to_string(p.first) + "," + to_string(p.second) + "}";
 }
-*/
+
 #ifdef SHADHIN
 #define dbg(x) cout << _LINE_ << " says: " << #x << " = " << x << "\n"
 #else
 #define dbg(x)
 #endif
+*/
 //____________________________________________________________________________________________________________________________________
-const int N=1e3+10;
-char res[N];
+const int N=1e6+10;
+int hsh[N];
 void solve()
 {
-    char a[N], sign, b[N];
-
-    cin>>a>>sign>>b;
-
-    // cout<<a<<" "<<sign<<" "<<b<<endl;
-
-
-    int len1=strlen(a);
-
-    int len2=strlen(b);
-
-    int maxLen=len1;
-    if(len2>maxLen)
-        maxLen=len2;
-
-    // cout<<len1<<" "<<len2<<" "<<maxLen<<endl;
-    res[0]='0';
-    int carry=0;
-    for(int i=maxLen;i>0;i--)
+    int test;
+    cin>>test;
+    for(int t=1;t<=test;++t)
     {
-        char x, y;
-        if(len1>0)
+        for(int i=0;i<N;++i)
+            hsh[i]=0;
+
+        int n;
+        cin>>n;
+
+        for(int i=0;i<n;++i)
         {
-            x=a[len1-1];
-            // cout<<a[len1-1]<<" ";
-            len1--;
+            int x;
+            cin>>x;
+            if(x<0)
+            {
+                x=-x;
+                hsh[x]=2;
+            }
+            else
+                hsh[x]=1;
         }
-        else
-            x='0';
 
-        if(len2>0)
+        int sum=0;
+        for(int i=0;i<N;++i)
         {
-            y=b[len2-1];
-            // cout<<b[len2-1]<<endl;
-            len2--;
+            if(hsh[i]==1)
+                sum+=i;
+            else if(hsh[i]==2)
+                sum-=i;
         }
-        else
-            y='0';
-
-
-        int sum=(x-'0')+(y-'0')+carry;
-        if(sum>=10)
-        {
-            carry=1;
-            sum=sum%10;
-        }
-        else carry =0;
-        // cout<<x<<" "<<y<<" "<<sum<<" "<<carry<<endl;
-
-        char sumChar=sum+'0';
-        // cout<<sumChar<<endl;
-
-        res[i]=sumChar;
+        cout<<"Case "<<t<<": "<<sum<<endl;
     }
-    if(res[0]!='0')
-        cout<<res<<endl;
-    else
-    {
-        for(int i=1;i<=maxLen;++i)
-            cout<<res[i];
-        cout<<endl;
-    }
-
 }
 int main()
 {
