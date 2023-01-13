@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int n, l, l2;
-    float l3;
+    // float l3;
 
     cin >> n >> l;
     int p[n];
@@ -18,9 +18,11 @@ int main()
 
     for (int i = 0; i < n - 1; i++)
         l2 = max(l2, p[i + 1] - p[i]);
-    l3=l2;
-    // cout.precision(11);
-    printf("%.11f\n", l3/2);
+   
+ 
+     printf("%.10f\n", l2 / 2.0);
+    //  cout.precision(11);
+    // cout << fixed << l2 / 2.0 << endl;
 
 
     return 0;
